@@ -1,0 +1,109 @@
+/* General Styles */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+}
+
+.box {
+    width: 100%;
+    max-width: 500px;
+    margin: 10px 0;
+    padding: 20px;
+    background-color: #00539f; /* BII Blue */
+    color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Header Section */
+.header-box {
+    text-align: center;
+}
+
+.custom-file-upload {
+    display: inline-block;
+    padding: 10px 20px;
+    cursor: pointer;
+    background-color: #003366; /* Darker Blue */
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.custom-file-upload:hover {
+    background-color: #002244; /* Darker shade on hover */
+}
+
+#header-image {
+    display: none;
+}
+
+#header-display {
+    width: 100%;
+    height: auto;
+    margin-top: 10px;
+    border-radius: 5px;
+}
+
+/* Editable Text Section */
+.text-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+textarea {
+    width: 100%;
+    height: 100px;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    margin-bottom: 10px;
+    resize: none;
+}
+
+button {
+    padding: 10px 20px;
+    cursor: pointer;
+    background-color: #003366; /* Darker Blue */
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #002244; /* Darker shade on hover */
+}
+
+/* Editable Link Section */
+.link-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+input[type="url"] {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    margin-bottom: 10px;
+}
+
+a {
+    color: #ffcc00; /* Gold color for link */
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover {
+    text-decoration: underline;
+}

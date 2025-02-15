@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BII Themed Webpage</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Header Section -->
+        <div class="box header-box">
+            <label for="header-image" class="custom-file-upload">
+                Upload Header Image
+            </label>
+            <input type="file" id="header-image" accept="image/*" onchange="displayImage(event)">
+            <img id="header-display" alt="Header Image" style="display:none;">
+        </div>
+
+        <!-- Editable Text Section -->
+        <div class="box text-box">
+            <textarea id="editable-text" placeholder="Enter your text here..."></textarea>
+            <button onclick="copyText()">COPY HERE</button>
+        </div>
+
+        <!-- Editable Link Section -->
+        <div class="box link-box">
+            <input type="url" id="editable-link" placeholder="https://example.com">
+            <a id="link-display" href="#" target="_blank">Visit Link</a>
+        </div>
+    </div>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
